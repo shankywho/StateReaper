@@ -1,0 +1,45 @@
+{
+  "name": "statereaper-finops",
+  "version": "1.0.0",
+  "description": "StateReaper – Agentic FinOps Tribunal. Zero-waste cloud reclamation with human-in-the-loop ChatOps via Switch + Telegram.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "demo": "tsx src/demo.ts",
+    "ui": "tsx src/ui/dashboard.ts",
+    "switch:server": "tsx src/mock/mock-switch-server.ts",
+    "audit:verify": "tsx src/tools/verify-audit.ts",
+    "test": "tsx --test",
+    "verify": "npm run typecheck && npm test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "finops",
+    "switch",
+    "ai-agents",
+    "chatops",
+    "telegram",
+    "aws"
+  ],
+  "author": "Shankar",
+  "license": "MIT",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@types/eventsource": "^1.1.15",
+    "@types/node": "^26.6.6",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.1161.0",
+    "@aws-sdk/client-ec2": "^3.1161.0",
+    "axios": "^1.21.0",
+    "dotenv": "^18.0.9",
+    "eventsource": "^5.1.4"
+  }
+}

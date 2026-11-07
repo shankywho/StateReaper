@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+
+# Local Environment & Secrets
+.env
+.env.local
+
+# Audit Logs & Runtime Artifacts
+audit-logs/
+*.log
+
+# Source maps
+*.js.map
+
+# Operating System junk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
